@@ -8,6 +8,20 @@ Master Node: At least 2 CPU and 4GB RAM (t2 medium )
 Worker Node: At Least 2 CPU and 2GM RAM (t2 micro )
 Ubuntu: Version 22.04
 
+--ports to be enable on master and worker nodes--
+
+Master Node
+- 6443 (TCP): Kubernetes API Server
+- 2379-2380 (TCP): etcd Server
+- 10250 (TCP): Kubelet API
+- 10251 (TCP): Kube-Scheduler
+- 10252 (TCP): Kube-Controller-Manager
+
+Worker Node
+- 10250 (TCP): Kubelet API
+- 30000-32767 (TCP): NodePort Services (if using NodePort services)
+
+  
 
 ✅ PART 1 — Steps and Commands to run on BOTH Master and Worker Nodes
 🔹 1. Update your system
