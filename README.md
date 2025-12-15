@@ -165,6 +165,12 @@ kubectl get pods -A
 
 
 ✅ PART 3 — Steps to run ONLY on Worker Nodes
+
+🔹 setup and install conntrack
+sudo apt update
+sudo apt install -y conntrack
+
+
 🔹 Join workers to the cluster
 
 Use the command shown earlier during master initialization.
