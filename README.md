@@ -126,6 +126,11 @@ This sets up the Kubernetes master.
 At the end, it will show a kubeadm join command → copy it.
 You will run it later on worker nodes.
 
+🔹 2. Set up and install conntarck.
+sudo apt update
+sudo apt install -y conntrack
+
+
 🔹 2. Set up kubectl for your user
 
 So you can run commands without using sudo.
