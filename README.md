@@ -114,6 +114,9 @@ sudo systemctl enable --now kubelet
 ✅ kubelet → Runs on every node, manages pods
 ✅ kubectl → Used to run Kubernetes commands
 
+🔹 10. Set up and install conntarck.
+sudo apt update
+sudo apt install -y conntrack
 
 
 
@@ -124,11 +127,7 @@ sudo kubeadm init
 
 This sets up the Kubernetes master.
 At the end, it will show a kubeadm join command → copy it.
-You will run it later on worker nodes.
-
-🔹 2. Set up and install conntarck.
-sudo apt update
-sudo apt install -y conntrack
+You will run it later on worker nodes
 
 
 🔹 2. Set up kubectl for your user
